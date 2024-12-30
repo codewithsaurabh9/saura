@@ -21,20 +21,7 @@
     },
     {
     "src": "/(.*)",
-    "dest": "devntechno/wsgi.py"
-    },
-
-
-    {
-        "builds": [
-          {
-            "src": "index.html",
-            "use": "@vercel/static"
-          }
-          
-        ]
-       
-      }
-      
+    "dest": "project_kirti/wsgi.py"
+    }
     ]
     }
