@@ -158,11 +158,21 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 
-# STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles_build'  # Ensure this matches the required directory name
 
+
+
+
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles_build'  # Replace with your desired directory
+
+# Add this if not already present
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',  # Your static folder
+]
