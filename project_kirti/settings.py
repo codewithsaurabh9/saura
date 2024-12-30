@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-_5($yd_1!&d2^c!wg=j%i9&!-w8ktlzx9=8w=@plu=4gd!bzta
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -147,3 +147,9 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+
+
+STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
+
