@@ -22,6 +22,28 @@
     {
     "src": "/(.*)",
     "dest": "devntechno/wsgi.py"
-    }
+    },
+
+
+    {
+        "builds": [
+          {
+            "src": "index.html",
+            "use": "@vercel/static"
+          },
+          {
+            "framework": "django",  // Specify your framework if necessary
+            "outputDirectory": "staticfiles_build"  // Replace with your actual output directory
+          }
+          
+        ],
+        "routes": [
+          {
+            "src": "/(.*)",
+            "dest": "/index.html"
+          }
+        ]
+      }
+      
     ]
     }
