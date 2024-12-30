@@ -14,12 +14,13 @@
     ],
     "routes": [
     {
-    "src": "/static/(.*)",
-    "dest": "/static/$1"
+      "src": "/static/assets(.*)",
+      "dest": "staticfiles/$1"
     },
     {
-    "src": "/(.*)",
-    "dest": "project_kirti/wsgi.py"
+      "src": "/(.*)",
+      "dest": "manage.py"
     }
-    ]
+  ]
+
     }
